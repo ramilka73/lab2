@@ -21,7 +21,7 @@ while abs(out) > t:
     summa += (np.linalg.det(linalg.matrix_power(a, 2 * n + 1))) / fact
     n += 1
     fact = fact * (2*n + 1) * (2*n + 2)
-    out = abs(fg+summa)
+    out = abs(fg-summa)
     fg = 0
     print(n+1, ':', summa, ' ', out)
 print('Сумма знакопеременного ряда:', summa)
